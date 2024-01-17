@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <title>Главная страница</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        /*background: #880707;*/
+        /*background: linear-gradient(153deg, #880707 26%, #190000 100%);*/
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    form {
+        max-width: 400px;
+        margin: 0 auto;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+
+    form div {
+        margin-bottom: 10px;
+    }
+
+    label {
+        display: block;
+        font-weight: bold;
+    }
+
+    input[type="text"],
+    input[type="email"] {
+        width: 100%;
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+
+
+    button[type="submit"] {
+        background-color: #4CAF50;
+        color: white;
+        padding: 10px 15px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        float: right;
+    }
+
+    button[type="submit"]:hover {
+        background-color: #45a049;
+    }
+
+
+    .error-message {
+        color: red;
+        font-size: 14px;
+        margin-top: 5px;
+    }
+
+/*    ------------------------------------------------*/
+</style>
+<body >
+<header data-bs-theme="dark">
+    <div class="collapse text-bg-dark" id="navbarHeader">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-8 col-md-7 py-4">
+                    <h4>О нас</h4>
+                    <p class="lh-base">Бронирование столика рекомендуется, особенно в пиковые часы и выходные дни.
+                        Специальные запросы и мероприятия: свяжитесь с нами заранее.
+                        Следите за нами в соцсетях для новостей и специальных предложений.
+                        Мы ценим ваше мнение и комментарии о вашем опыте.
+                        Спасибо!</p>
+                </div>
+                <div class="col-sm-4 offset-md-1 py-4">
+                    <h4>Контакты</h4>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white">Instagram</a></li>
+                        <li><a href="#" class="text-white">Facebook</a></li>
+                        <li><a href="#" class="text-white">Email</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<nav class="navbar sticky-top navbar-expand-lg bg-dark;
+    top: ;
+    width: 100%;">
+    <div class="container-fluid">
+        <a class="navbar-brand " href="/main">Главная страница</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-left mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="/main/menu">Меню</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/">Галерея</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/" data-bs-toggle="collapse" data-bs-target="#navbarHeader"
+                       aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">Контакты</a>
+                </li>
+            </ul>
+            <div class="col-sm-3  ms-auto text-end ">
+                <button type="button" class="btn btn-outline-dark btn-lg" data-bs-toggle="tooltip"
+                        data-bs-placement="bottom" title="Корзина"><i class="bi bi-basket"></i></button>
+                <a class="btn btn-outline-dark btn-lg" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Войти"
+                   href="/main/entry"><i class="bi bi-door-open"></i></a>
+            </div>
+
+        </div>
+    </div>
+</nav>
+
+<div class="block"
+style="height: 768px">
+<div class="cover-container justify-content-center d-flex w-100 h-100 p-3 mx-auto flex-column">
+    <main class="px-3">
+        <h1 class="lead text-center"
+        style="color: black">Cover your page.</h1>
+        <p class="lead text-center"
+        style="color: black">Cover is a one-page template for building simple and beautiful home pages. Download, edit the
+            text, and add your own fullscreen background photo to make it your own.</p>
+        <p class="lead text-center">
+            <a href="#" class="btn btn-lg btn-light fw-bold border-white bg-white li">Learn more</a>
+        </p>
+    </main>
+
+</div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+</html>

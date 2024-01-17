@@ -1,0 +1,14 @@
+com\project\restaurant\model\Guest.class
+com\project\restaurant\repos\GuestRepository.class
+com\project\restaurant\model\Dish.class
+com\project\restaurant\RestaurantApplication.class
+com\project\restaurant\controllerRest\MenuControllerREST.class
+com\project\restaurant\dto\DishRequest.class
+com\project\restaurant\controller\MainController.class
+com\project\restaurant\repos\DishRepository.class
+com\project\restaurant\service\GuestService.class
+com\project\restaurant\model\Role.class
+com\project\restaurant\service\GuestServiceImpl.class
+com\project\restaurant\model\Drink.class
+com\project\restaurant\service\DishService.class
+com\project\restaurant\dto\RegistrationForm.class
